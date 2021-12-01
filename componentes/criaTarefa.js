@@ -21,7 +21,6 @@ export const handleNovoItem = (evento) => {
   const tarefasAtualizadas = [...tarefas, dados]
   
   localStorage.setItem('tarefas', JSON.stringify(tarefasAtualizadas))
-  console.log(localStorage)
   
   input.value = "";
   carregaTarefa();
